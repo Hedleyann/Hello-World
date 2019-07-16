@@ -1,0 +1,365 @@
+<html>
+
+  <head>
+
+    <a name="top"></a>
+
+  	<link rel="stylesheet" type="text/css" href="style.css">
+
+  	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR:400,500,700,900&display=swap" rel="stylesheet">
+
+  	<link
+      rel="stylesheet"
+      href="prism-atom-dark.css"
+      type="text/css"
+      media="screen"
+    />
+
+    <script type="text/javascript" src="prism.js"></script>
+    <script type="text/javascript" src="prism.ruby.js"></script>
+
+  <title>Marie John</title>
+
+    <meta name="description" content="Marie John is a professional
+          software engineer specializing in full-stack development.
+          He has extensive experience with Ruby, Rails, JavaScript,
+          and building web applications.">
+
+  </head>
+   
+  <body>
+
+
+    <div class="about-container">
+
+      <ul>
+
+        <li><a href="#about" class="nav-link">ABOUT</a></li>
+        <li><a href="#code-samples" class="nav-link">CODE SAMPLES</a></li>
+        <li><a href="#web-apps" class="nav-link">WEB APPS</a></li>
+        <li><a href="#skills-and-tools" class="nav-link">SKILLS &amp; TOOLS</a></li>
+        <li class="hire-me"><a href="mariejohnresumefull.pdf" target="blank" class="nav-link">HIRE ME</a></li>
+      
+      </ul>
+
+
+    <div class="social">
+
+      <a href="mariejohnresume.pdf"target="blank"><img src="https://img.icons8.com/ultraviolet/40/000000/open-resume.png"alt="mariejohnresume"></a>
+
+    	<a href="https://github.com/Hedleyann" target="blank"><img src="https://img.icons8.com/color/40/000000/github-2.png" alt="Github"></a>
+
+    	<a href="https://www.linkedin.com/in/marie-john-45766b2b"target="blank"><img src="https://img.icons8.com/color/40/000000/linkedin-circled.png" alt="Linkedin"></a>
+
+    	<a href="https://join.slack.com/t/hedleyann/shared_invite/enQtNjU3NjM2OTI1MDc4LTgwMjZlODAxYzcwNzhkODFjNzQ2YjliNjZkMTlmNTM4NDI0YTQ4ZmMxNTIzNDZiMmJmNWEzMGUzZGI4YjVmYWY" target="blank"><img src="https://img.icons8.com/color/40/000000/slack.png" alt="Slack"></a>
+    	
+    </div>
+
+
+    <div class="about">
+
+    	<h1> Marie John </h1>
+
+    	<h2> SOFTWARE ENGINEER </h2>
+
+    	<hr class="grey"/>
+
+    	<p class="bio">
+
+       Marie is a web developer who's been dabbling in various aspects of Information Technology, since receiving her first laptop immediately after Y2K. She pursued a BSc Hons. program in Computing and Information Systems with London Metropolitan University and many Comptia certificate courses at The University of the West Indies. This landed her at Motorola Solutions Inc. as a Coordinator, but also performing radio repairs and programming. At Microsoft IoT in Action 2019, she witnessed the power of Azure and AWS, which fired up the determination to broaden her knowledge and skills on different technologies by enrolling in The University of Central Florida Full Stack Development Bootcamp. <br>"Software Engineering is my passion, having the ability and freedom to create, break and rebuild things from scratch is exhilarating."</br>
+
+      </p>
+
+    </div>
+
+    </div>
+
+
+
+    <h3 id="code-samples"> Code Snippets</h3>
+
+    <hr class="yellow"/>
+
+    <div class="box">
+
+    	<h4>Temperature Conversion</h4>
+
+      <p>
+        This Ruby program will prompt the user for a temperature
+        in degrees Celsius and let the user know what the
+        corresponding temperature is in Fahrenheit.
+      </p>
+
+    </div>
+
+    <div class="box-2">
+  	<pre><code class="language-ruby">
+
+      print &quot;Hello. Please enter a celsius value: &quot;
+      celsius = gets
+      fahrenheit = (celsius.to_i * 9 / 5) + 32
+      print &quot;The fahrenheit equivalent is: &quot;
+      print fahrenheit
+      puts &quot;.&quot;
+
+      # REFACTORED METHOD (denser, but less readable) 
+      # print &quot;Hello. Please enter a celsius value: &quot;
+      # print &quot;The fahrenheit equivalent is: &quot; gets.to_i * 9/5 + 32, &quot;.\n&quot;
+
+  	</code></pre>
+
+    </div>
+
+
+    <br class="clear" />
+
+
+    <div class="box-2">
+
+  	<pre><code class="language-ruby">
+      puts &quot;Enter a number:&quot;
+      num = gets.chomp.to_i
+
+      ones_place = num % 10
+      tens_place = num % 100
+
+      if tens_place &gt;= 11 &amp;&amp; tens_place &lt;= 19
+      &nbsp; &nbsp; puts &quot;#{num}th&quot;
+      end
+
+      if ones_place == 0
+      &nbsp; &nbsp; puts &quot;#{num}th&quot;
+      elsif ones_place == 1
+      &nbsp; &nbsp; puts &quot;#{num}st&quot;
+      elsif ones_place == 2
+      &nbsp; &nbsp; puts &quot;#{num}nd&quot;
+      elsif ones_place == 3
+      &nbsp; &nbsp; puts &quot;#{num}rd&quot;
+      else
+      &nbsp; &nbsp; puts &quot;#{num}th&quot;
+      end
+  	</code></pre>
+
+    </div>
+
+
+    <div class="box">
+
+  	  <h4>Ordinal Challenge</h4>
+
+      <p>
+        This Ruby program will convert a plain number
+        to the ordinal of the number. So for example,
+        if the user enters 2, it will display 2nd, if
+        the user enters 3, it will display 3rd, etc.
+      </p>
+
+    </div>
+
+
+    <br class="clear" />
+
+
+    <div class="box">
+
+      <h4>Foobar</h4>
+
+      <p>
+        This Ruby program is an adaptation of a classic technical
+        interview problem which displays sequences
+        of the Foobar pattern.
+      </p>
+
+    </div>
+
+
+    <div class="box-2" >
+
+    <pre><code class="language-ruby" >
+      puts &quot;How many items do you want to see?&quot;
+      items = gets.chomp.to_i
+      &nbsp;
+      list = []
+      (1..items).each do |n|
+      &nbsp; if n % 3 == 0 &amp;&amp; n % 5 == 0
+      &nbsp; &nbsp; list &lt;&lt; &quot;FOOBAR&quot;
+      &nbsp; elsif n % 3 == 0
+      &nbsp; &nbsp; list &lt;&lt; &quot;FOO&quot;
+      &nbsp; elsif n % 5 == 0
+      &nbsp; &nbsp; list &lt;&lt; &quot;BAR&quot;
+      &nbsp; else
+      &nbsp; &nbsp; list &lt;&lt; n
+      &nbsp; end
+      end
+      &nbsp;
+      puts list
+  	</code></pre>
+
+    </div>
+
+
+    <br class="clear" />
+
+
+
+    <h3 id="web-apps">Web Apps</h3>
+
+    <hr class="yellow" />
+
+
+    <div class="box">
+
+        <h4>Quote Generator</h4>
+        
+<a href="https://splurty-marie-john.herokuapp.com/" target="blank"><img src="splurty.png" alt="Quote Generator" class="full-width"></a>
+
+         <p>
+            A database-powered quote generator with a mobile-first
+            design, using the Ruby on Rails framework, HTML, and CSS.
+            Uses Git and GitHub for version control, and launched
+            on Heroku.
+        </p>
+
+    </div>
+
+
+    <div class="box">
+
+        <h4>Yelp Clone</h4>
+
+        <img src="nomster.png" class="full-width" />
+
+        <p>
+          A Yelp clone that integrates with the Google Maps API
+          and includes features like user comments, star ratings,
+          image uploading, and user authentication.
+        </p>
+
+    </div>
+
+
+      <br class="clear" />
+
+
+    <div class="box">
+
+        <h4>Two-Sided Market Place</h4>
+
+        <img src="flixter.png" class="full-width" />
+
+        <p>
+          A two-sided, video-streaming marketplace platform that
+          features credit card payment capabilities, user role
+          management, complex user interfaces, and advanced
+          database relationships.
+        </p>
+
+    </div>
+
+   
+    <div class="box">
+
+        <h4>Test Driven Development</h4>
+
+        <img src="grammable.png" class="full-width" />
+
+        <p>
+          An Instagram clone that was built using industry-standard, test-driven
+          development following numerous red/green/refactor cycles.
+        </p>
+
+    </div>
+
+      <br class="clear" />
+
+    <div class="box">
+
+      <h4>Single Page Todo Application</h4>
+
+      <img src="todoster.png" class="full-width" />
+
+      <p>
+        This single-page to-do application features a
+        fluid user interface that– by using JavaScript–
+        allows users to rapidly add dynamic content.
+      </p>
+
+    </div>
+
+    <div class="box">
+
+      <h4>Agile Team Project</h4>
+
+      <img src="chess.png" class="full-width" />
+
+      <p>
+        Worked on an Agile software development team building
+        a chess application. Under the guidance of a senior software engineer,
+        we had weekly Agile team meetings for code reviews, sprint planning,
+        and feature assignments.
+      </p>
+
+    </div>
+      
+      <br class="clear" />
+      
+      <h3 id="skills-and-tools">Skills &amp; Tools</h3>
+
+      <hr class="yellow" />
+
+      <p class="skills-and-tools">
+
+        Marie has developed proficiency and expertise
+        in the following programming languages and
+        comfort with the following tools.
+
+      </p>
+
+    <div class="icons">
+
+      <img src="github.png" class="icon" />
+     	<img src="rubocop.png" class="icon" />
+      <img src="trello.png" class="icon" />
+      <img src="slack.png" class="icon" />
+      <img src="codeship.png" class="icon" />
+
+    </div>
+
+      <br class="clear" />
+
+      <img src="skills.png" class="icon"/>
+
+      <br class="clear" />
+    
+
+    <div class="contact-me" id="hire-me">
+
+      <h3 class="contact-headline">Contact</h3>
+
+
+      <p class="contact-info">
+        Currently entertaining new opportunities.
+        Please get in touch via email: 
+      </p>
+
+      <p>
+        <a href="mailto:my@email.com" class="contact-link">
+                  hedleyann@msn.com
+        </a>
+
+      </p>
+
+      <p>
+   		
+      <a href="#top" style="color:white;">Back to Top</a>
+  	  
+      </p>
+
+
+    </div>
+
+  </body>
+
+
+
+</html>
